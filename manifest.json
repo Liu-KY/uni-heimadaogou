@@ -52,9 +52,12 @@
     "mp-weixin" : {
         "appid" : "wx736ad283ac1c3fb8",
         "setting" : {
-            "urlCheck" : false
+            "urlCheck" : false,
+            "es6" : true,
+            "minified" : true
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "permission" : {}
     },
     "mp-alipay" : {
         "usingComponents" : true
@@ -68,5 +71,5 @@
     "uniStatistics" : {
         "enable" : false
     },
-    "vueVersion" : "2"
+    "vueVersion" : "3"
 }
