@@ -38,13 +38,20 @@
     // 获取当前系统的信息
     const sysInfo = uni.getSystemInfoSync()
     // 为 wh 窗口可用高度动态赋值
-    wh.value = sysInfo.windowHeight
+    wh.value = sysInfo.windowHeight - 50
     getCateList()
   })
+  
+  const  gotoSearch = ()=> {
+       uni.navigateTo({
+         url: '/subpkg/search/search'
+       })
+     }
 </script>
 
 <template>
   <view>
+    <my-search @click="gotoSearch"></my-search>
     <view>
       <view class="scroll-view-container">
         <!-- 左侧的滚动视图区域 -->
